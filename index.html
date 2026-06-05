@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RNCP37873 — TP Concepteur développeur d'applications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <nav class="sidebar-nav">
+      <a href="#introduction" class="nav-link active" data-section="introduction">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-text">Introduction</span>
+      </a>
+      <a href="#dossier" class="nav-link" data-section="dossier">
+        <span class="nav-icon">📁</span>
+        <span class="nav-text">Dossier Projet</span>
+      </a>
+      <a href="#soutenance" class="nav-link" data-section="soutenance">
+        <span class="nav-icon">🎤</span>
+        <span class="nav-text">Présentation</span>
+      </a>
+      <a href="#technique" class="nav-link" data-section="technique">
+        <span class="nav-icon">💻</span>
+        <span class="nav-text">Entretien Technique</span>
+      </a>
+      <a href="#questionnaire" class="nav-link" data-section="questionnaire">
+        <span class="nav-icon">🇬🇧</span>
+        <span class="nav-text">Questionnaire Pro</span>
+      </a>
+      <a href="#final" class="nav-link" data-section="final">
+        <span class="nav-icon">👔</span>
+        <span class="nav-text">Entretien Final</span>
+      </a>
+      <a href="#conseils" class="nav-link" data-section="conseils">
+        <span class="nav-icon">✅</span>
+        <span class="nav-text">Conseils Jury</span>
+      </a>
+      <a href="#checklist" class="nav-link" data-section="checklist">
+        <span class="nav-icon">📋</span>
+        <span class="nav-text">Checklist Finale</span>
+      </a>
+    </nav>
+  </aside>
+
+  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Ouvrir le menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+  </button>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Header / Hero -->
+    <header class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1600&q=80" alt="Conception et développement" loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content fade-in">
+        <span class="hero-badge">RNCP37873</span>
+        <h1 class="hero-title">TP — Concepteur développeur d'applications</h1>
+        <p class="hero-subtitle-main">Préparation à l'examen final</p>
+        <p class="hero-description">Un support interactif pour structurer votre dossier, votre présentation, l'entretien technique, le questionnaire pro (anglais) et l'entretien final.</p>
+        <a href="#introduction" class="btn btn-primary" id="btnStart">Commencer la préparation</a>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="section" id="introduction">
+      <div class="section-banner">
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80" alt="Atelier de travail" loading="lazy">
+        <div class="banner-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">🏠 Introduction</span>
+          <h2>Comprendre l'épreuve (2h15)</h2>
+          <p class="section-lead">Le TP CDA (RNCP37873) évalue votre capacité à concevoir, développer et déployer une application sécurisée, organisée en couches, avec une attention forte à la qualité, la sécurité et la mise en production.</p>
+        </div>
+
+        <div class="grid-3 reveal">
+          <div class="info-card">
+            <div class="info-card-icon">🎯</div>
+            <h3>Objectif</h3>
+            <p>Montrer que vous maîtrisez le cycle complet : analyse → conception → développement (UI + métier) → données (SQL/NoSQL) → tests → déploiement/DevOps, tout en respectant sécurité (ANSSI), accessibilité (RGAA) et conformité (RGPD).</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">🧩</div>
+            <h3>Blocs (BC01–BC03)</h3>
+            <p>BC01 : développer une application sécurisée. BC02 : concevoir/développer une application en couches (architecture + BDD + accès données). BC03 : préparer le déploiement (tests, doc, mise en production DevOps).</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">⏱️</div>
+            <h3>Organisation</h3>
+            <p>Votre dossier et vos supports servent de base au jury : ils doivent contenir des preuves (schémas, extraits de code, choix argumentés, procédures). L'épreuve comprend aussi un questionnaire pro avec doc en anglais.</p>
+          </div>
+        </div>
+
+        <div class="timeline reveal">
+          <h3 class="timeline-title">Déroulement de l'épreuve</h3>
+          <div class="timeline-track">
+            <div class="timeline-item">
+              <div class="timeline-marker">1</div>
+              <div class="timeline-content">
+                <h4>Présentation du projet</h4>
+                <span class="timeline-duration">40 min</span>
+                <p>Présentation du ou des projets (dossier + diaporama), démonstration et explication de vos choix de conception.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker">2</div>
+              <div class="timeline-content">
+                <h4>Entretien technique</h4>
+                <span class="timeline-duration">45 min</span>
+                <p>Questions sur vos compétences (projet) + questions complémentaires pour couvrir le référentiel, y compris sécurité et architecture.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker">3</div>
+              <div class="timeline-content">
+                <h4>Questionnaire professionnel</h4>
+                <span class="timeline-duration">30 min</span>
+                <p>Étude d'une documentation technique en anglais + réponses à des questions (français + anglais).</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker">4</div>
+              <div class="timeline-content">
+                <h4>Entretien final</h4>
+                <span class="timeline-duration">20 min</span>
+                <p>Échange final, incluant un temps sur le dossier professionnel (posture, parcours, projection, qualité de communication).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dossier Projet -->
+    <section class="section section-alt" id="dossier">
+      <div class="section-banner">
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&q=80" alt="Architecture et sécurité" loading="lazy">
+        <div class="banner-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">📁 Dossier Projet</span>
+          <h2>Dossier projet + dossier de conception</h2>
+          <p class="section-lead">Cliquez sur chaque carte pour une trame claire et des exemples de preuves attendues (schémas, extraits, checklists).</p>
+        </div>
+        <div class="cards-grid" id="dossierCards"></div>
+      </div>
+    </section>
+
+    <!-- Soutenance -->
+    <section class="section" id="soutenance">
+      <div class="section-banner">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80" alt="Présentation et soutenance" loading="lazy">
+        <div class="banner-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">🎤 Présentation</span>
+          <h2>Diaporama — structure recommandée</h2>
+          <p class="section-lead">Une structure « pro » et orientée preuves : vous racontez une histoire, vous démontrez, et vous justifiez vos choix (architecture, sécurité, qualité, déploiement).</p>
+        </div>
+        <div class="slides-carousel reveal">
+          <button class="slides-nav slides-nav-prev" id="slidesPrev" aria-label="Slide précédente" disabled>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="slides-track-wrapper">
+            <div class="slides-track" id="slidesTrack"></div>
+          </div>
+          <button class="slides-nav slides-nav-next" id="slidesNext" aria-label="Slide suivante">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+          <div class="slides-footer">
+            <span class="slides-counter" id="slidesCounter">1 / 12</span>
+            <div class="slides-dots" id="slidesDots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entretien Technique -->
+    <section class="section section-alt" id="technique">
+      <div class="section-banner">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80" alt="Conception logicielle" loading="lazy">
+        <div class="banner-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">💻 Entretien Technique</span>
+          <h2>Questions techniques fréquentes (CDA)</h2>
+          <p class="section-lead">Accordéons par thème : architecture en couches, sécurité, données, tests et déploiement. Objectif : réponses structurées + exemples concrets de votre projet.</p>
+        </div>
+        <div class="accordion-container" id="techAccordion"></div>
+      </div>
+    </section>
+
+    <!-- Questionnaire Pro -->
+    <section class="section" id="questionnaire">
+      <div class="section-banner">
+        <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?w=1200&q=80" alt="Documentation technique en anglais" loading="lazy">
+        <div class="banner-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">🇬🇧 Questionnaire professionnel</span>
+          <h2>Doc technique en anglais + réponses (FR/EN)</h2>
+          <p class="section-lead">Ici, le jury évalue votre compréhension et votre capacité à répondre vite et clairement. Entraînez-vous sur des questions « type » et des réponses courtes.</p>
+        </div>
+        <div class="pro-cards-grid" id="quizCards"></div>
+      </div>
+    </section>
+
+    <!-- Entretien Final -->
+    <section class="section section-alt" id="final">
+      <div class="section-banner">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=80" alt="Entretien final" loading="lazy">
+        <div class="banner-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">👔 Entretien final</span>
+          <h2>Posture, parcours et projet professionnel</h2>
+          <p class="section-lead">Vous devez être crédible, clair, et cohérent. Le jury regarde votre communication, votre prise de recul et votre capacité à travailler en équipe.</p>
+        </div>
+        <div class="pro-cards-grid" id="finalCards"></div>
+      </div>
+    </section>
+
+    <!-- Conseils Jury -->
+    <section class="section" id="conseils">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">✅ Conseils Jury</span>
+          <h2>Ce qui fait la différence</h2>
+          <p class="section-lead">Un dossier bien structuré + une démo maîtrisée + des choix justifiés + une attitude pro.</p>
+        </div>
+        <div class="conseils-grid reveal">
+          <div class="conseils-column conseils-do">
+            <h3>
+              <span class="badge badge-green">✓</span>
+              À faire
+            </h3>
+            <ul class="conseils-list">
+              <li><span class="badge badge-green">✓</span> Justifier chaque choix (architecture, BDD, sécurité, tests)</li>
+              <li><span class="badge badge-green">✓</span> Montrer des preuves (schémas, captures, logs, CI)</li>
+              <li><span class="badge badge-green">✓</span> Démontrer le parcours principal en moins de 5 minutes</li>
+              <li><span class="badge badge-green">✓</span> Répondre avec une structure (principe → exemple → impact)</li>
+              <li><span class="badge badge-green">✓</span> Assumer vos limites et expliquer comment vous cherchez</li>
+              <li><span class="badge badge-green">✓</span> Être attentif à la sécurité (ANSSI) et au RGPD</li>
+            </ul>
+          </div>
+          <div class="conseils-column conseils-dont">
+            <h3>
+              <span class="badge badge-red">✗</span>
+              À éviter
+            </h3>
+            <ul class="conseils-list">
+              <li><span class="badge badge-red">✗</span> Réciter sans preuve</li>
+              <li><span class="badge badge-red">✗</span> Faire une démo fragile (données non prêtes, bugs)</li>
+              <li><span class="badge badge-red">✗</span> Minimiser la sécurité (« c'est pour plus tard »)</li>
+              <li><span class="badge badge-red">✗</span> Confondre authentification et autorisation</li>
+              <li><span class="badge badge-red">✗</span> Parler d'un pattern sans l'appliquer</li>
+              <li><span class="badge badge-red">✗</span> Être flou sur votre rôle dans le projet</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checklist Finale -->
+    <section class="section section-alt" id="checklist">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">📋 Checklist Finale</span>
+          <h2>Prêt(e) pour la session ?</h2>
+          <p class="section-lead">Checklist interactive (sauvegarde automatique) : dossier, diaporama, preuves, démo, sécurité, tests, déploiement.</p>
+        </div>
+        <div class="checklist-wrapper reveal">
+          <div class="progress-header">
+            <span class="progress-label">Progression</span>
+            <span class="progress-percent" id="progressPercent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <ul class="checklist" id="checklist"></ul>
+          <button class="btn btn-secondary" id="resetChecklist">Réinitialiser la checklist</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>RNCP37873 — TP Concepteur développeur d'applications · Support pédagogique · Tout droits non réservés</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Overlay for mobile sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
